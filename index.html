@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>FriendsOfMeditation</title>
+    <style>
+        
+            @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Neonderthaw&display=swap');
+        
+    </style>
+</head>
+<body>
+    <!-- <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div> -->
+    <nav class="flex mx-14 justify-between">
+        <a href="javascript:void(0);" class="icon lg:hidden md:hidden sm:block px-2 py-4 " onclick="toggleClass()">
+            <i class="fa fa-bars"></i>
+          </a>
+        <ul class="topnav px-2 py-4 lg:flex lg:flex-row md:flex md:flex-row lg:space-x-3 md:space-x-3 hidden lg:text-black md:text-black lg:bg-white md:bg-white sm:bg-black
+         sm:text-white lg:mt-0 md:mt-0 sm:mt-14"  id="myTopnav">
+            <li class="cursor-pointer font-semibold hover:text-sky-400">Home</li>
+            <li class="cursor-pointer font-semibold hover:text-sky-400">About</li>
+            <li class="cursor-pointer font-semibold hover:text-sky-400">Contact</li>
+        </ul>
+        
+        <div class="logo px-2 py-4 text-lg" style="font-family: 'Dancing Script', cursive;font-style: Dancing Script;">
+            Friends of Meditation
+        </div>
+        
+        <span class="px-2 py-4 flex space-x-3">
+            <span class="cursor-pointer font-semibold hover:text-sky-400 ">Account</span>
+
+            <span class="cursor-pointer font-semibold hover:text-sky-400 "><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span class="cursor-pointer font-semibold hover:text-sky-400"><i class="fa-brands fa-shopify"></i></span>
+        </span>
+        
+    </nav>
+    <header class="flex mx-14 rounded-full justify-center">
+        <div class="flex flex-wrap justify-center items-center bg-gradient-to-r from-blue-200 to-transparent lg:h-96 md:h-96 sm:h-206 w-full rounded-l-full rounded-t-full">
+            <div class="content flex flex-col sm:flex-wrap justify-center lg:w-3/4 sm:w-full lg:h-96 md:h-96 sm:h-206 px-5 lg:py-5 md:py-5 sm:py-14 animate-pulse">
+                <p class="lg:text-2xl md:text-2xl sm:text-1xl font-bold text-black"
+            style="font-family: 'Marcellus', serif;"
+            >Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, quidem?
+            </p>
+            <p style="font-family: 'Marcellus', serif;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum consequatur facilis aperiam est eveniet doloremque rem id quo aspernatur ad!
+               <br> <button class="bg-black text-white px-2 py-2 rounded-lg my-3">Shop Now
+                <i class="fa-solid fa-arrow-up-right"></i>
+                           </button>    
+            </p>
+             </div>
+            
+            <div class="img h-96 lg:w-1/4 sm:w-full">
+                <img src="https://source.unsplash.com/p-v1DBkTrgo" class="h-96 w-full rounded-full">
+            </div>
+
+        </div>
+    </header>
+    <div class="about mx-14 py-4 flex flex-col items-center">
+        <h1 class="text-5xl font-bold text-center py-5" style="font-family: 'Marcellus', serif;">WHAT WE DO?
+        </h1>
+        <p class="w-1/2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatem architecto placeat, officiis cum ipsam quasi dignissimos eos quibusdam beatae quae eius facilis, iste amet nulla illum! Saepe, earum ducimus.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, iusto cumque odio laudantium illo vero officiis quas aperiam nostrum, explicabo dolores alias harum corrupti ea inventore magni odit ullam possimus? Impedit sapiente accusamus illum doloremque quod corporis cum molestiae! Cum quae nemo maiores. Cupiditate reiciendis aliquam aliquid qui perferendis omnis?
+        </p>
+        <button class="bg-black text-white px-2 py-2 rounded-lg my-3">Learn More
+           
+        </button>
+    </div>
+<section class="flex mx-14 rounded-lg justify-center">
+        <div class="bg-gradient-to-r from-blue-300 to-transparent lg:h-100 md:h-196 sm:h-296 w-full rounded-full py-5">
+            <h1 class="text-5xl font-bold text-center lg:pb-8" style="font-family: 'Marcellus', serif;">
+                FEATURED COLLECTIONS
+            </h1>
+<div class="items grid lg:grid-cols-4 md:grid-rows-2 md:grid-cols-2 sm:grid-rows-4 lg:grid-flow-col gap-4 px-2 lg:h-96 md:h-196 sm:h-296 pt-4 pb-5 items-center justify-items-center">
+    <div class="lg:row-start-1 lg:row-span-2 item h-60 py-6">
+        <img src="https://source.unsplash.com/NTyBbu66_SI" class="h-40 w-full">
+        <p class="h-20 font-semibold text-center">SLEEPING MASKS<br>
+            $100
+         </p>
+        
+        </div>
+<div class="lg:row-end-2 lg:row-span-2 item h-60 py-6">
+    <img src="https://source.unsplash.com/NTyBbu66_SI" class="h-40 w-full">
+    <p class="h-20 font-semibold text-center">YOGA MATS<br>
+        $100
+     </p>
+    
+    </div>
+    <div class="lg:row-span-2 lg:row-end-3 item h-60 py-6">
+        <img src="https://source.unsplash.com/NTyBbu66_SI" class="h-40 w-full">
+        <p class="h-20 font-semibold text-center">YOGA MATS<br>
+            $100
+         </p>
+        
+        </div>
+        <div class="lg:row-end-2 lg:row-span-2 item h-60 py-6">
+            <img src="https://source.unsplash.com/NTyBbu66_SI" class="h-40 w-full">
+            <p class="h-20 font-semibold text-center">YOGA MATS<br>
+                $100
+             </p>
+            
+            </div>
+        
+</div>
+        </div>
+    </section>
+    <section class="popularC flex flex-col mx-14 py-14 rounded-lg justify-center">
+        <h1 class="text-5xl font-bold text-center pb-14" style="font-family: 'Marcellus', serif;">
+                POPULAR COLLECTIONS
+            </h1>
+        <div class="con  grid lg:grid-cols-4 lg:grid-rows-1 md:grid-rows-2 md:grid-cols-2 sm:grid-rows-4 gap-4 mx-4">
+            <div class="c px-2 py-2 drop-shadow-lg border-2 text-center">
+                <img src="https://source.unsplash.com/NTyBbu66_SI" class="h-40 w-full">
+                <p class="h-20">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                 <button class="bg-black text-white px-2 py-2 rounded-lg my-3">Add to Cart
+              </button>
+            </div>
+            <div class="c px-2 py-2 drop-shadow-lg border-2 text-center">
+                <img src="https://source.unsplash.com/NTyBbu66_SI" class="h-40 w-full">
+                <p class="h-20">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button class="bg-black text-white px-2 py-2 rounded-lg my-3">Add to Cart
+                </button>
+            </div>
+            <div class="c px-2 py-2 drop-shadow-lg border-2 text-center">
+                <img src="https://source.unsplash.com/NTyBbu66_SI" class="h-40 w-full">
+                <p class="h-20">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button class="bg-black text-white px-2 py-2 rounded-lg my-3">Add to Cart
+                </button>
+            </div>
+            <div class="c px-2 py-2 drop-shadow-lg border-2 text-center">
+                <img src="https://source.unsplash.com/NTyBbu66_SI" class="h-40 w-full">
+                <p class="h-20">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button class="bg-black text-white px-2 py-2 rounded-lg my-3">Add to Cart
+                </button>
+            </div>
+            
+            
+        </div>
+    </section>
+    <footer class="bg-black text-white py-14 px-14">
+        <div class="flex flex-wrap lg:justify-around sm:justify-evenly">
+        <h4 class="font-bold py-4">Friends of Meditation</h4>
+        
+        <ul class="px-4">
+            <li class="cursor-pointer hover:text-blue-300">Home</li>
+            <li class="cursor-pointer hover:text-blue-300">Contact</li>
+            <li class="cursor-pointer hover:text-blue-300">About</li>
+
+        </ul>
+        <ul class="px-4">
+            <li class="cursor-pointer hover:text-blue-300">Privacy Policy</li>
+            <li class="cursor-pointer hover:text-blue-300">Terms and Conditions</li>
+
+        </ul>
+        <div class="px-4">
+            <h2>Subscribe to the Newsletter</h2>
+            <input type="text" class="focus:outline-none text-black"><br>
+            <button class="bg-blue-300 text-white px-2 py-2 rounded-lg my-3">Subscribe
+                <i class="fa-solid fa-arrow-up-right"></i>
+            </button>
+        </div>
+        <div class="px-4">
+            <h4 class="font-bold" py-3>Social Media</h4>
+            <div class="flex justify-between py-3">
+            <i class="fa-brands fa-twitter fa-2x cursor-pointer hover:text-blue-300 mx-3"></i>
+            <i class="fa-brands fa-facebook fa-2x cursor-pointer hover:text-blue-300 mx-3"></i>
+            <i class="fa-brands fa-instagram fa-2x cursor-pointer hover:text-blue-300 mx-3"></i>
+            </div>
+        </div>
+        </div>
+
+    </footer>
+</body>
+<script>
+    
+  var x = document.getElementById("myTopnav");
+  function toggleClass() {
+    if (x.classList.contains('hidden')) {
+      x.classList.remove('hidden');
+      x.classList.add('sm:block');
+    } else {
+        x.classList.remove('sm:block');
+      x.classList.add('hidden');
+    }
+  }
+
+    </script>
+</html>
